@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interactive Apartments</title>
+</head>
+
+<body>
+    <div class="main">
+        <button class="cartoon" onclick="toggleCartoon()">
+            <i class="fas fa-baby"></i>
+        </button>
+        <div class="pos1">
+            <img src="img/front_door.jpg" alt="" class="img_size">
+            <img src="img/front_door_copy.jpg" class="img_size2">
+            <div class="turner white_hover turn_right" onclick="pos1_pos1r()">
+                <i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="turner white_hover turn_left" onclick="pos1_pos1l()">
+                <i class="fa fa-chevron-left"></i>
+            </div>
+            <div class="turner white_hover turn_down" onclick="pos1_pos2()">
+                <i class="fa fa-undo"></i>
+            </div>
+            <div class="white_hover faq" onclick="toggleFaq()">
+                <img src="img/faq.png" class="img_reg">
+                <img src="img/faq.png" class="img_reg2">
+            </div>
+            <div class="white_hover domofon" onclick="toggleCode()">
+                <img src="img/code.png" class="img_reg">
+                <img src="img/code.png" class="img_reg2">
+            </div>
+            <div class="white_hover house_rules" onclick="toggleRules()">
+                <img src="img/house_rules.png" class="img_reg">
+                <img src="img/house_rules.png" class="img_reg2">
+            </div>
+            <div class="reminder"></div>
+        </div>
+        <div class="pos pos1l">
+            <img src="img/front_left.jpg" class="img_size">
+            <img src="img/front_left copy.jpg" class="img_size2">
+            <div class="turner white_hover pos1l_tr_fix turn_right" onclick="pos1l_pos1()">
+                <i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="turner white_hover pos1l_tl_fix turn_left" onclick="pos1l_pos2()">
+                <i class="fa fa-chevron-left"></i>
+            </div>
+            <div class="turner white_hover pos1l_td_fix turn_down" onclick="pos1l_pos1r()">
+                <i class="fa fa-undo"></i>
+            </div>
+            <div class="turner white_hover pos1l_wi_fix walk-in" onclick="pos1l_pos3()">
+                <i class="fas fa-street-view"></i>
+            </div>
+            <div class="white_hover faq2" onclick="toggleFaq2()">
+                <img src="img/faq.png" class="img_reg">
+                <img src="img/faq.png" class="img_reg2">
+            </div>
+            <div class="white_hover can_knock2" onclick="toggleKnock2()">
+                <img src="img/should_i_knock.png" class="img_reg">
+                <img src="img/should_i_knock.png" class="img_reg2">
+            </div>
+        </div>
+        <div class="pos pos1r">
+            <img src="img/front_right.jpg" class="img_size">
+            <img src="img/front_right_copy.jpg" class="img_size2">
+            <div class="turner white_hover turn_right pos2_tr_fix" onclick="pos1r_pos2()">
+                <i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="turner white_hover turn_left pos2_tl_fix" onclick="pos1r_pos1()">
+                <i class="fa fa-chevron-left"></i>
+            </div>
+            <div class="turner white_hover turn_down pos1r_td_fix" onclick="pos1r_pos1l()">
+                <i class="fa fa-undo"></i>
+            </div>
+            <div class="turner white_hover walk-in pos1r_wi_fix" onclick="pos1r_pos6()">
+                <i class="fas fa-walking"></i>
+            </div>
+            <div class="turner white_hover toilet" onclick="pos1r_pos1t()">
+                <i class="fas fa-street-view"></i>
+            </div>
+            <div class="white_hover welcome" onclick="toggleWelcome()">
+                <img src="img/welcome.png" class="img_reg">
+                <img src="img/welcome copy.png" class="img_reg2">
+            </div>
+        </div>
+        <div class="pos pos1t">
+            <img src="img/toiilet_door.jpg" class="img_size">
+            <img src="img/toiilet_door copy.jpg" class="img_size2">
+            <div class="turner white_hover turn_down pos3_td_fix" onclick="pos1t_pos1r()">
+                <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="turner white_hover walk-in pos1t_fix" onclick="pos1t_pos1t2()">
+                <i class="fas fa-restroom"></i>
+            </div>
+        </div>
+        <div class="pos pos1t2">
+            <img src="img/toilet.jpg" class="img_size">
+            <img src="img/toilet copy.jpg" class="img_size2">
+            <img src="img/shine.png" class="shine">
+            <div class="ghost_house">
+                <img src="img/ghost.png" class="ghost">
+            </div>
+            <div class="turner white_hover turn_down pos1t2_fix" onclick="pos1t2_pos1t()">
+                <i class="fa fa-chevron-down"></i>
+            </div>
+        </div>
+        <div class="pos pos2">
+            <img src="img/front_back.jpg" class="img_size">
+            <img src="img/front_back copy.jpg" class="img_size2">
+            <div class="turner white_hover turn_right pos2_tr_fix" onclick="pos2_pos1l()">
+                <i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="turner white_hover turn_left pos2_tl_fix" onclick="pos2_pos1r()">
+                <i class="fa fa-chevron-left"></i>
+            </div>
+            <div class="turner white_hover turn_down" onclick="pos2_pos1()">
+                <i class="fa fa-undo"></i>
+            </div>
+            <div class="turner white_hover walk-in" onclick="pos2_pos12()">
+                <i class="fas fa-street-view"></i>
+            </div>
+            <div class="white_hover can_knock" onclick="toggleKnock()">
+                <img src="img/should_i_knock.png" class="img_reg">
+                <img src="img/should_i_knock.png" class="img_reg2">
+            </div>
+            <div class="white_hover earphones" onclick="toggleEarphones()">
+                <img src="img/earphones.png" class="img_reg">
+                <img src="img/earphones.png" class="img_reg2">
+            </div>
+        </div>
+        <div class="pos pos3">
+            <img src="img/bedroom1.jpg" class="img_size">
+            <img src="img/bedroom1 copy.jpg" class="img_size2">
+            <div class="turner white_hover turn_left pos2_tl_fix" onclick="pos3_pos4()">
+                <i class="fa fa-chevron-left"></i>
+            </div>
+            <div class="turner white_hover turn_down pos3_td_fix" onclick="pos3_pos1l()">
+                <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="white_hover mirror" onclick="toggleMirror()">
+                <img src="img/mirror.png" class="img_reg">
+                <img src="img/mirror.png" class="img_reg2">
+            </div>
+        </div>
+        <div class="pos pos4">
+            <img src="img/bedroom2.jpg" class="img_size">
+            <img src="img/bedroom2 copy.jpg" class="img_size2">
+            <div class="turner white_hover turn_right pos2_tr_fix" onclick="pos4_pos3()">
+                <i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="turner white_hover turn_left pos2_tl_fix" onclick="pos4_pos5()">
+                <i class="fa fa-chevron-left"></i>
+            </div>
+        </div>
+        <div class="pos pos5">
+            <img src="img/bedroom4.jpg" class="img_size">
+            <img src="img/bedroom4 copy.jpg" class="img_size2">
+            <div class="turner white_hover turn_right pos2_tr_fix" onclick="pos5_pos4()">
+                <i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="white_hover balcony" onclick="toggleBalcony()">
+                <img src="img/balcony2.jpg" class="img_reg">
+                <img src="img/balcony2 copy.jpg" class="img_reg2">
+            </div>
+        </div>
+        <div class="pos pos6">
+            <img src="img/kitchen_main.jpg" class="img_size">
+            <img src="img/kitchen_main copy.jpg" class="img_size2">
+            <div class="turner white_hover turn_left pos6_tl_fix" onclick="pos6_pos7()">
+                <i class="fa fa-chevron-left"></i>
+            </div>
+            <div class="turner white_hover turn_down pos3_td_fix" onclick="pos6_pos1r()">
+                <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="turner white_hover turn_right pos6_tr_fix" onclick="pos6_pos10()">
+                <i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="turner white_hover turn_right pos6_sv_fix" onclick="pos6_pos9()">
+                <i class="fas fa-street-view"></i>
+            </div>
+            <div class="turner white_hover turn_right pos6_sv2_fix" onclick="pos6_pos8()">
+                <i class="fas fa-eye"></i>
+            </div>
+        </div>
+        <div class="pos pos7">
+            <img src="img/kitchen.jpg" class="img_size">
+            <img src="img/kitchen copy.jpg" class="img_size2">
+            <div class="p_cover">
+                <p class="facilities"></p>
+            </div>
+            <div class="white_hover drinking_water" onclick="drinkingWater()"></div>
+            <div class="white_hover gas" onclick="gas()"></div>
+            <div class="white_hover boiler" onclick="boiler()"></div>
+            <div class="white_hover microwave" onclick="microwave()"></div>
+            <div class="white_hover plates" onclick="plates()"></div>
+            <div class="white_hover cups" onclick="cups()"></div>
+            <div class="white_hover ghost2_house" onclick="ghost2()">
+                <img src="img/ghost.png" class="ghost2">
+            </div>
+            <div class="white_hover heat" onclick="heat()"></div>
+            <div class="turner white_hover turn_down pos3_td_fix" onclick="pos7_pos6()">
+                <i class="fa fa-chevron-down"></i>
+            </div>
+        </div>
+        <div class="pos pos8">
+            <img src="img/Balcony1.jpg" class="img_size">
+            <img src="img/Balcony1 copy.jpg" class="img_size2">
+            <div class="turner white_hover turn_down pos8_td_fix" onclick="pos8_pos6()">
+                <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="turner white_hover turn_right pos6_tr_fix" onclick="pos8_pos9()">
+                <i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="white_hover opera" onclick="toggleOpera()">
+                <p class="opera_p">Opera,100 meter/300 feet</p>
+                <img src="img/opera.jpg" class="img_reg">
+                <img src="img/opera copy.jpg" class="img_reg2">
+            </div>
+            <div class="white_hover northern" onclick="toggleNorthern()">
+                <p class="northern_p">Northern Avenue ,120 meter/360 feet</p>
+                <img src="img/northern.jpg" class="img_reg">
+                <img src="img/northern copy.jpg" class="img_reg2">
+            </div>
+        </div>
+        <div class="pos pos9">
+            <img src="img/ashotik.jpg" class="img_size">
+            <img src="img/ashotik copy.jpg" class="img_size2">
+            <div class="turner white_hover turn_down pos3_td_fix" onclick="pos9_pos6()">
+                <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="turner white_hover turn_left pos6_tl_fix" onclick="pos9_pos8()">
+                <i class="fa fa-chevron-left"></i>
+            </div>
+            <div class="white_hover instruction" onclick="toggleInstruction()">
+                <img src="img/ashotik_instruction.png" class="img_reg">
+                <img src="img/ashotik_instruction copy.png" class="img_reg2">
+            </div>
+            <div class="ghost3_house">
+                <img src="img/ghost.png" class="ghost3">
+            </div>
+            <div class="white_hover coconut" onclick="ghost3()"></div>
+        </div>
+        <div class="pos pos10">
+            <img src="img/dining1.jpg" class="img_size">
+            <img src="img/dining1 copy.jpg" class="img_size2">
+            <div class="turner white_hover turn_down pos3_td_fix" onclick="pos10_pos6()">
+                <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="white_hover dining" onclick="toggleDining()">
+                <img src="img/dinning_table.jpg" class="img_reg">
+                <img src="img/dinning_table copy.jpg" class="img_reg2">
+            </div>
+            <div class="white_hover games" onclick="toggleGames()">
+                <img src="img/games.jpg" class="img_reg">
+                <img src="img/games copy.jpg" class="img_reg2">
+            </div>
+            <div class="turner white_hover turn_right pos6_sv_fix" onclick="pos10_pos11()">
+                <i class="fas fa-street-view"></i>
+            </div>
+        </div>
+        <div class="pos pos11">
+            <img src="img/main_side_view.jpg" class="img_size">
+            <img src="img/main_side_view copy.jpg" class="img_size2">
+            <div class="turner white_hover turn_down pos3_td_fix" onclick="pos11_pos10()">
+                <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="turner white_hover turn_down pos11_td_fix" onclick="pos11_pos12()">
+                <i class="fa fa-undo"></i>
+            </div>
+            <div class="white_hover tv" onclick="toggleTv()">
+                <img src="img/tv.jpg" class="img_reg">
+                <img src="img/tv copy.jpg" class="img_reg2">
+            </div>
+        </div>
+        <div class="pos pos12">
+            <img src="img/back_ap.jpg" class="img_size">
+            <img src="img/back_ap copy.jpg" class="img_size2">
+            <div class="turner white_hover turn_down pos12_td_fix" onclick="pos12_pos11()">
+                <i class="fa fa-undo"></i>
+            </div>
+            <div class="turner white_hover turn_down pos3_td_fix" onclick="pos12_pos2()">
+                <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="white_hover tv2" onclick="toggleTv2()">
+                <img src="img/tv.jpg" class="img_reg">
+                <img src="img/tv copy.jpg" class="img_reg2">
+            </div>
+        </div>
+    </div>
+    <div class="dark_bg"></div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
